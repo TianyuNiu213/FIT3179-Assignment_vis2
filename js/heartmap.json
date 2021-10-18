@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/TianyuNiu213/FIT3179Assignment2/main/data/usa-earthquake.csv"},
+  "width":300,
+  "height":150,
+  "title":{"text":["Number of earthquakes of magnitude larger than 4"," for each state for each year in the USA between 2011 and 2021"],
+  "fontSize":16,
+  "lineHeight":20
+  },
+  "mark": "rect",
+  "encoding": {
+    "y": {"field": "locationSource", "type": "ordinal","title":"State"},
+    "x": {"field": "year", "type": "temporal","timeUnit":"year","title":"Year"},
+    "color": {"aggregate": "count", "field": "states","title":"Count of earthquakes","scale":{"scheme":"reds"}},
+    "tooltip":[{"field":"year","type":"temporal","timeUnit":"year","title":"Year"},{"aggregate":"count","field":"states","title":"Count of earthquake","format":","},{"field":"locationSource","title":"State"}]
+  },
+  "config": {
+    "axis": {"grid": true, "tickBand": "extent"}
+  }
+}
