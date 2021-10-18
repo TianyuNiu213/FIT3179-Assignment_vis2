@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>FIT3179-Tianyu_Niu-Assignment2</title>
+    <meta name="description" content="Simplified Bootstrap template with sticky menu">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href=" https://tianyuniu213.github.io/FIT3179-Assignment_vis2/css/sticky-menu.css" rel="stylesheet">
+    <style type="text/css">
+    .no-js #page-top #welcome .container .row .col-lg-12 h1 {
+	font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+}
+  body {
+	background-image: url(https://tianyuniu213.github.io/FIT3179-Assignment_vis2/image/background1.png);
+}
+	
+
+    .no-js #page-top #welcome .container .row .col-lg-12 .display-3 strong {
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+}
+    </style>
+    <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <!-- Import vega-embed -->
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    
+    
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" tracingsrc="img/background.jpg"
+    tracingopacity="34">
+
+
+    <!-- Welcome   -->
+    <section id="welcome" class="welcome-section">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <h1>&nbsp;</h1>
+                <h1 class="display-2"><strong>Earthquakes in USA </strong></h1>
+                  <h4>Because the United States is at the plate boundary, earthquakes often occur in the United States. According to <strong style="color: rgb(68, 133, 187);">the records of the U.S. Geological Survey</strong>, in the past 10 years, more than <strong style="color: rgb(255, 100, 44)">700</strong> earthquakes of magnitude 4 or above occurred in the United States.</h4>
+                <p>&nbsp;</p>
+                <p></p>
+            <a class="btn btn-warning page-scroll" href="#magdepth">Discover More</a></div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- First section- -->
+    <section id="magdepth" class="magdepth-section">
+        <div  class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                  <h1>Overview on a Map</h1>
+				<p class="text-secondary">(Hover on the dot for more details and select magnitude to filter)</p>
+				<p>We can see that <strong>California</strong> on the west coast of the United States have the most earthquakes. However, the deepest earthquake in recent ten years occurred in <strong>Washington State</strong>.</p>
+                 <h4>What is the significance of magnitude and depth?</h4>
+                 <p>The potential damage of earthqaukes needs consider both magnitude and depth. Generally, earthquakes of <strong>magnitude 6 </strong> and above can cause shaking intensities when nearby.Regards of depth, the deeper the quake, the less violent and less dangerous. That's because the senergy released felt from an earthquake diminishes with increasing distance from the quake's source.</p>
+                <a class="btn btn-warning page-scroll" href="#year">Continue</a>
+             
+                </div>
+                <div id="vis1" class="col-lg-6">&nbsp;</div>
+            </div>
+
+        </div>
+    </section>
+    
+     <!-- What we do Section -->
+    <section id="year" class="year-section">
+        <div  class="container">
+            <div class="row">
+                <div id="vis2" class="col-lg-6">
+                   
+                </div>
+                <div class="col-lg-6">
+					<h1>Earthquake Frequency with Different Magnitude</h1>
+					<p class="text-secondary">(Select magnitude to filter the number of eathquakes for each year)</p>
+					<p>In the past 10 years, a large number of earthquakes occurred in <strong>2019 and 2020</strong>. Generally speaking, earthquakes of low magnitude occur more frequently. According to American geoscience research, there are about 100 earthquakes of <strong>magnitude 4</strong> in America every year. However, the time between earthquakes of magnitude 7 is relatively long, which shows that earthquakes of <strong>magnitude 7 or higher</strong> are not easy to occur in the United States.</p>
+                    <a class="btn btn-warning page-scroll" href="#states">Continue</a>
+				</div>
+				
+		</div>
+			
+        </div>
+    </section>
+    
+    
+    <!-- Contact Section -->
+    <section id="states" class="states-section">
+        <div  class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Zoom into Each State in the USA</h1>
+					
+					<p>There are many earthquakes in <strong>California and Nevada</strong>. According to geoscience, the Pacific plate is the most stressed plate on the earth, and it often collides with the northern Australian plate and Eurasian plate. This mainly causes the long and narrow coastline of the United States and the compressive stress between it and the interior of the mainland.</p>
+                </div>
+                <div id = "vis3" class="col-lg-6">&nbsp;</div>
+               
+          
+            </div>
+            <div class="row">
+				<div class="col-lg-6">
+				<p class="text-secondary">(Hover on the second graph for more details)</p>
+                 <a class="btn btn-warning page-scroll" href="#type">Continue</a>
+				</div>
+                <div id = "vis4" class="col-lg-6">&nbsp;</div>
+            
+            </div>
+        </div>
+    </section>
+    
+    
+     <!-- What we do Section -->
+    <section id="type" class="year-section">
+        <div  class="container">
+            <div class="row">
+					<h1>The Association Between mag type and depth</h1>
+					<p class="text-secondary">(Select the histogram on the left and the bubble chart on the right will change.)</p>
+					<p>In the last 10 years, mw has the largest number of magnitude types. The magnitude range is mainly <strong>4-6</strong>, but the depth is mainly <strong>0-40km</strong>. The magnitude and type of earthquakes are related to the depth of earthquakes, but they do not play a decisive role, so this means that the magnitude of earthquakes is large, but the depth of earthquakes is not necessarily deep.</p>
+				<div id="vis5" class="col-lg-6">&nbsp;</div>
+		</div>
+			
+        </div>
+    </section>
+    
+    
+    
+    <div id="source">
+		<p>This visualization is created by Tianyu Niu(Student ID is 28851218)
+            <br>Html template: https://html5-templates.com
+            <br>Data source: https://earthquake.usgs.gov/earthquakes/search/
+            <br>Img: https://wallpapersafari.com/earthquake-wallpaper/</p>
+	</div>
+	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+	
+    <!-- jQuery -->
+    <script src="https://tianyuniu213.github.io/FIT3179-Assignment_vis2/JavaScript/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://tianyuniu213.github.io/FIT3179-Assignment_vis2/JavaScript/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="https://tianyuniu213.github.io/FIT3179-Assignment_vis2/JavaScript/jquery.easing.min.js"></script>
+    <script src="https://tianyuniu213.github.io/FIT3179-Assignment_vis2/JavaScript/sticky-menu.js"></script>
+<script type="text/javascript">
+  var specVis1 =  "https://raw.githubusercontent.com/TianyuNiu213/FIT3179-Assignment_vis2/main/js/map.json";
+
+  var specVis2= "https://raw.githubusercontent.com/TianyuNiu213/FIT3179Assignment2/main/js/line_chart.json";
+
+  var specVis3 ="https://raw.githubusercontent.com/TianyuNiu213/FIT3179-Assignment_vis2/main/js/chart.json";
+ 
+  var specVis4 ="https://raw.githubusercontent.com/TianyuNiu213/FIT3179-Assignment_vis2/main/js/heartmap.json";
+    
+  var specVis5 ="https://raw.githubusercontent.com/TianyuNiu213/FIT3179-Assignment_vis2/main/js/bar.json";
+  
+
+  vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+   vegaEmbed('#vis2', specVis2, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  vegaEmbed('#vis3', specVis3, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  vegaEmbed('#vis4', specVis4, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+    
+   vegaEmbed('#vis5', specVis5, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+    
+
+</script>
+    
+    
+</body>
+
+
+</html>
